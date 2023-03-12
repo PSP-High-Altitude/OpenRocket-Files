@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# for each subdir in "archive", zip it up and put it in
+# the working directory, overwriting as needed
+for subdir in "archive/*/"; do
+    dest="./$(basename ${subdir}).ork"
+    zip -r ${dest} "${subdir}*"
+done
