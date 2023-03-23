@@ -44,7 +44,7 @@
                 <packedradius>0.0125</packedradius>
                 <radialposition>0.0</radialposition>
                 <radialdirection>0.0</radialdirection>
-                <mass>2.5</mass>
+                <mass>1.9277675725</mass>
                 <masscomponenttype>masscomponent</masscomponenttype>
               </masscomponent>
             </subcomponents>
@@ -77,7 +77,7 @@
                 <instanceseparation>0.0</instanceseparation>
                 <axialoffset method="top">0.11</axialoffset>
                 <position type="top">0.11</position>
-                <overridemass>2.948</overridemass>
+                <overridemass>1.4061363470000001</overridemass>
                 <overridesubcomponentsmass>false</overridesubcomponentsmass>
                 <material type="bulk" density="755.0">Maple</material>
                 <length>0.050800000000000005</length>
@@ -85,18 +85,6 @@
                 <radialdirection>0.0</radialdirection>
                 <outerradius>0.0714502</outerradius>
               </bulkhead>
-
-              <masscomponent>
-                <name>Experiment</name>
-                <axialoffset method="bottom">-0.33099999999999996</axialoffset>
-                <position type="bottom">-0.33099999999999996</position>
-                <packedlength>0.31000000000000005</packedlength>
-                <packedradius>0.0625</packedradius>
-                <radialposition>0.0</radialposition>
-                <radialdirection>0.0</radialdirection>
-                <mass>1.0</mass>
-                <masscomponenttype>masscomponent</masscomponenttype>
-              </masscomponent>
 
               <masscomponent>
                 <name>Separation Mechanism</name>
@@ -393,7 +381,7 @@
         <launchrodlength>2.4383999999999997</launchrodlength>
         <launchrodangle>0.0</launchrodangle>
         <launchroddirection>90.0</launchroddirection>
-        <windaverage>6.7056</windaverage>
+        <windaverage>8.9408</windaverage>
         <windturbulence>0.1</windturbulence>
         <launchaltitude>216.10320000000002</launchaltitude>
         <launchlatitude>40.23</launchlatitude>
@@ -402,8 +390,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="3106.579" maxvelocity="274.088" maxacceleration="81.132" maxmach="0.819" timetoapogee="25.065" flighttime="163.698" groundhitvelocity="9.257" launchrodvelocity="17.064" deploymentvelocity="23.778">
-        <warning>Recovery device deployment at high speed (22.7 m/s)</warning>
+      <flightdata maxaltitude="3380.29" maxvelocity="310.523" maxacceleration="95.735" maxmach="0.928" timetoapogee="25.204" flighttime="189.064" groundhitvelocity="8.396" launchrodvelocity="18.328" deploymentvelocity="21.624">
+        <warning>Recovery device deployment at high speed (21.4 m/s)</warning>
       </flightdata>
     </simulation>
 
@@ -425,8 +413,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="3301.211" maxvelocity="291.195" maxacceleration="87.43" maxmach="0.865" timetoapogee="25.413" flighttime="179.405" groundhitvelocity="8.758" launchrodvelocity="11.503" deploymentvelocity="22.507">
-        <warning>Recovery device deployment at high speed (22.6 m/s)</warning>
+      <flightdata maxaltitude="3418.759" maxvelocity="308.342" maxacceleration="94.572" maxmach="0.916" timetoapogee="25.449" flighttime="191.02" groundhitvelocity="8.358" launchrodvelocity="11.835" deploymentvelocity="21.475">
+        <warning>Recovery device deployment at high speed (21.6 m/s)</warning>
       </flightdata>
     </simulation>
   </simulations>
