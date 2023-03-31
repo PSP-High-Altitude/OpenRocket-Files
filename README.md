@@ -14,7 +14,7 @@ This repository is set up with hooks to allow git to work with .ork files proper
   * Re-commit (you can use the same commit message)
 * Pulling from the remote
   * Nothing is different, just `git pull` as usual
-* Don't mess with the `archive` folder
+* Don't edit the `archive` folder (though make sure it's included in the second commit)
 
 ## How this works
 OpenRocket files (.ork files) are binary files: they're just a bunch of bytes. This is fine, but git can't properly track changes with binary files. If all you do is change the mass of the nosecone, git won't be able to identify that was the change. All it can do is call your change a whole new version of the file. Also, if two people work on different parts of the same file, they won't be able to merge it in git. 
