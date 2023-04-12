@@ -4,9 +4,6 @@
     <name>Rocket</name>
     <axialoffset method="absolute">0.0</axialoffset>
     <position type="absolute">0.0</position>
-    <motorconfiguration configid="3bd5909f-8790-4d28-bdfb-f6d8a71dbf05">
-      <stage number="0" active="true"/>
-    </motorconfiguration>
     <motorconfiguration configid="d63a5dc4-5001-4b3c-a9d3-b328c211cb25" default="true">
       <stage number="0" active="true"/>
     </motorconfiguration>
@@ -15,16 +12,14 @@
     <subcomponents>
       <stage>
         <name>Sustainer</name>
-        <overridemass>13.380974915000001</overridemass>
-        <overridesubcomponentsmass>true</overridesubcomponentsmass>
-        <overridecg>1.4986</overridecg>
+        <overridemass>2.8122726940000002</overridemass>
+        <overridesubcomponentsmass>false</overridesubcomponentsmass>
+        <overridecg>1.4478</overridecg>
         <overridesubcomponentscg>false</overridesubcomponentscg>
 
         <subcomponents>
           <nosecone>
             <name>Nose cone (Random ass profile lol)</name>
-            <overridemass>2.7215542200000002</overridemass>
-            <overridesubcomponentsmass>false</overridesubcomponentsmass>
             <finish>polished</finish>
             <material type="bulk" density="1850.0">Fiberglass</material>
             <length>0.533</length>
@@ -48,7 +43,7 @@
                 <packedradius>0.0125</packedradius>
                 <radialposition>0.0</radialposition>
                 <radialdirection>0.0</radialdirection>
-                <mass>1.9277675725</mass>
+                <mass>2.2679618500000003</mass>
                 <masscomponenttype>masscomponent</masscomponenttype>
               </masscomponent>
             </subcomponents>
@@ -71,7 +66,7 @@
                 <packedradius>0.06</packedradius>
                 <radialposition>0.0</radialposition>
                 <radialdirection>0.0</radialdirection>
-                <mass>0.5</mass>
+                <mass>0.226796185</mass>
                 <masscomponenttype>masscomponent</masscomponenttype>
               </masscomponent>
 
@@ -98,7 +93,7 @@
                 <packedradius>0.06</packedradius>
                 <radialposition>0.0</radialposition>
                 <radialdirection>0.0</radialdirection>
-                <mass>0.0</mass>
+                <mass>1.3607771100000001</mass>
                 <masscomponenttype>recoveryhardware</masscomponenttype>
               </masscomponent>
 
@@ -108,6 +103,8 @@
                 <instanceseparation>0.0</instanceseparation>
                 <axialoffset method="bottom">-0.277</axialoffset>
                 <position type="bottom">-0.277</position>
+                <overridemass>0.45359237</overridemass>
+                <overridesubcomponentsmass>false</overridesubcomponentsmass>
                 <material type="bulk" density="680.0">Cardboard</material>
                 <length>0.047400000000000005</length>
                 <radialposition>0.0</radialposition>
@@ -233,19 +230,6 @@
                   <ignitionevent>automatic</ignitionevent>
                   <ignitiondelay>0.0</ignitiondelay>
                   <overhang>0.0</overhang>
-                  <motor configid="3bd5909f-8790-4d28-bdfb-f6d8a71dbf05">
-                    <type>reload</type>
-                    <manufacturer>AeroTech</manufacturer>
-                    <digest>bf8b52e275f5c1a9d5e52be4ee6c324b</digest>
-                    <designation>M750W</designation>
-                    <diameter>0.098</diameter>
-                    <length>0.732</length>
-                    <delay>0.0</delay>
-                  </motor>
-                  <ignitionconfiguration configid="3bd5909f-8790-4d28-bdfb-f6d8a71dbf05">
-                    <ignitionevent>automatic</ignitionevent>
-                    <ignitiondelay>0.0</ignitiondelay>
-                  </ignitionconfiguration>
                   <motor configid="d63a5dc4-5001-4b3c-a9d3-b328c211cb25">
                     <type>single</type>
                     <manufacturer>AeroTech</manufacturer>
@@ -357,26 +341,6 @@
 
   <simulations>
     <simulation status="notsimulated">
-      <name>Purdue Dairy 9 mph Wind</name>
-      <simulator>RK4Simulator</simulator>
-      <calculator>BarrowmanCalculator</calculator>
-      <conditions>
-        <configid>3bd5909f-8790-4d28-bdfb-f6d8a71dbf05</configid>
-        <launchrodlength>2.4383999999999997</launchrodlength>
-        <launchrodangle>7.0</launchrodangle>
-        <launchroddirection>90.0</launchroddirection>
-        <windaverage>4.02336</windaverage>
-        <windturbulence>0.1</windturbulence>
-        <launchaltitude>0.0</launchaltitude>
-        <launchlatitude>40.511009015067145</launchlatitude>
-        <launchlongitude>-87.02257322591745</launchlongitude>
-        <geodeticmethod>spherical</geodeticmethod>
-        <atmosphere model="isa"/>
-        <timestep>0.05</timestep>
-      </conditions>
-    </simulation>
-
-    <simulation status="notsimulated">
       <name>Indiana Rocketry</name>
       <simulator>RK4Simulator</simulator>
       <calculator>BarrowmanCalculator</calculator>
@@ -394,8 +358,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="3191.287" maxvelocity="289.572" maxacceleration="87.265" maxmach="0.867" timetoapogee="24.992" flighttime="172.847" groundhitvelocity="8.876" launchrodvelocity="17.808" deploymentvelocity="22.827">
-        <warning>Recovery device deployment at high speed (28.9 m/s)</warning>
+      <flightdata maxaltitude="2947.926" maxvelocity="263.621" maxacceleration="77.779" maxmach="0.789" timetoapogee="24.591" flighttime="154.658" groundhitvelocity="9.486" launchrodvelocity="16.837" deploymentvelocity="24.379">
+        <warning>Recovery device deployment at high speed (30.6 m/s)</warning>
       </flightdata>
     </simulation>
 
@@ -417,6 +381,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
+      <flightdata maxaltitude="3157.884" maxvelocity="292.968" maxacceleration="88.137" maxmach="0.87" timetoapogee="19.751" flighttime="19.751" launchrodvelocity="11.026">
+      </flightdata>
     </simulation>
   </simulations>
   <photostudio>
