@@ -37,13 +37,13 @@
             <subcomponents>
               <masscomponent>
                 <name>Unspecified</name>
-                <axialoffset method="top">0.30479999999999996</axialoffset>
-                <position type="top">0.30479999999999996</position>
+                <axialoffset method="top">0.25399999999999995</axialoffset>
+                <position type="top">0.25399999999999995</position>
                 <packedlength>0.025</packedlength>
                 <packedradius>0.0125</packedradius>
                 <radialposition>0.0</radialposition>
                 <radialdirection>0.0</radialdirection>
-                <mass>2.2679618500000003</mass>
+                <mass>0.0</mass>
                 <masscomponenttype>masscomponent</masscomponenttype>
               </masscomponent>
             </subcomponents>
@@ -358,8 +358,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="2947.926" maxvelocity="263.621" maxacceleration="77.779" maxmach="0.789" timetoapogee="24.591" flighttime="154.658" groundhitvelocity="9.486" launchrodvelocity="16.837" deploymentvelocity="24.379">
-        <warning>Recovery device deployment at high speed (30.6 m/s)</warning>
+      <flightdata maxaltitude="2519.362" maxvelocity="243.217" maxacceleration="73.084" maxmach="0.729" timetoapogee="22.917" flighttime="133.359" groundhitvelocity="9.81" launchrodvelocity="16.24" deploymentvelocity="25.239">
+        <warning>Recovery device deployment at high speed (40.2 m/s)</warning>
       </flightdata>
     </simulation>
 
@@ -381,7 +381,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="3157.884" maxvelocity="292.968" maxacceleration="88.137" maxmach="0.87" timetoapogee="19.751" flighttime="19.751" launchrodvelocity="11.026">
+      <flightdata maxaltitude="3289.526" maxvelocity="289.795" maxacceleration="86.877" maxmach="0.86" timetoapogee="25.414" flighttime="178.584" groundhitvelocity="8.789" launchrodvelocity="11.431" deploymentvelocity="22.594">
+        <warning>Recovery device deployment at high speed (22.7 m/s)</warning>
       </flightdata>
     </simulation>
   </simulations>
