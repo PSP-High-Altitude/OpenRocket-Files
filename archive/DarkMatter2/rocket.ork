@@ -12,10 +12,10 @@
     <subcomponents>
       <stage>
         <name>Sustainer</name>
-        <overridemass>2.8122726940000002</overridemass>
-        <overridesubcomponentsmass>false</overridesubcomponentsmass>
-        <overridecg>1.4478</overridecg>
-        <overridesubcomponentscg>false</overridesubcomponentscg>
+        <overridemass>13.38</overridemass>
+        <overridesubcomponentsmass>true</overridesubcomponentsmass>
+        <overridecg>1.46</overridecg>
+        <overridesubcomponentscg>true</overridesubcomponentscg>
 
         <subcomponents>
           <nosecone>
@@ -192,8 +192,8 @@
                 <radiusoffset method="surface">0.0</radiusoffset>
                 <angleoffset method="relative">0.0</angleoffset>
                 <rotation>0.0</rotation>
-                <axialoffset method="bottom">0.0</axialoffset>
-                <position type="bottom">0.0</position>
+                <axialoffset method="bottom">0.07600000000000001</axialoffset>
+                <position type="bottom">0.07600000000000001</position>
                 <finish>polished</finish>
                 <material type="bulk" density="1780.0">Carbon fiber</material>
                 <thickness>0.00635</thickness>
@@ -201,15 +201,15 @@
                 <cant>0.0</cant>
                 <tabheight>0.0254</tabheight>
                 <tablength>0.05</tablength>
-                <tabposition relativeto="center">-0.10159999999999997</tabposition>
-                <tabposition relativeto="middle">-0.10159999999999997</tabposition>
+                <tabposition relativeto="center">-0.13959999999999997</tabposition>
+                <tabposition relativeto="middle">-0.13959999999999997</tabposition>
                 <filletradius>0.0</filletradius>
                 <filletmaterial type="bulk" density="680.0">Cardboard</filletmaterial>
                 <finpoints>
                   <point x="0.0" y="0.0"/>
-                  <point x="0.16509999999999994" y="0.1651"/>
-                  <point x="0.24129999999999993" y="0.1651"/>
-                  <point x="0.254" y="0.0"/>
+                  <point x="0.24" y="0.24"/>
+                  <point x="0.33" y="0.24"/>
+                  <point x="0.33" y="0.0"/>
                 </finpoints>
               </freeformfinset>
 
@@ -358,8 +358,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="2947.926" maxvelocity="263.621" maxacceleration="77.779" maxmach="0.789" timetoapogee="24.591" flighttime="154.658" groundhitvelocity="9.486" launchrodvelocity="16.837" deploymentvelocity="24.379">
-        <warning>Recovery device deployment at high speed (30.6 m/s)</warning>
+      <flightdata maxaltitude="3064.208" maxvelocity="286.155" maxacceleration="87.005" maxmach="0.858" timetoapogee="24.431" flighttime="167.793" groundhitvelocity="8.879" launchrodvelocity="17.808" deploymentvelocity="22.838">
+        <warning>Recovery device deployment at high speed (32 m/s)</warning>
       </flightdata>
     </simulation>
 
@@ -381,8 +381,6 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="3157.884" maxvelocity="292.968" maxacceleration="88.137" maxmach="0.87" timetoapogee="19.751" flighttime="19.751" launchrodvelocity="11.026">
-      </flightdata>
     </simulation>
   </simulations>
   <photostudio>
