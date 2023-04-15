@@ -12,9 +12,9 @@
     <subcomponents>
       <stage>
         <name>Sustainer</name>
-        <overridemass>13.38</overridemass>
+        <overridemass>14.51495584</overridemass>
         <overridesubcomponentsmass>true</overridesubcomponentsmass>
-        <overridecg>1.46</overridecg>
+        <overridecg>1.4605</overridecg>
         <overridesubcomponentscg>true</overridesubcomponentscg>
 
         <subcomponents>
@@ -53,7 +53,7 @@
             <name>Upper Body Tube (CF)</name>
             <finish>polished</finish>
             <material type="bulk" density="1780.0">Carbon fiber</material>
-            <length>1.1938</length>
+            <length>1.143</length>
             <thickness>0.0</thickness>
             <radius>auto 0.025</radius>
 
@@ -130,7 +130,7 @@
             <name>Lower Body Tube (CF)</name>
             <finish>unfinished</finish>
             <material type="bulk" density="1780.0">Carbon fiber</material>
-            <length>1.1683999999999999</length>
+            <length>1.1779249999999999</length>
             <thickness>0.00160020000000001</thickness>
             <radius>0.0714502</radius>
 
@@ -320,7 +320,7 @@
             <name>Transition</name>
             <finish>polished</finish>
             <material type="bulk" density="2700.0">Aluminum</material>
-            <length>0.03</length>
+            <length>0.041275</length>
             <thickness>0.002</thickness>
             <shape>conical</shape>
             <foreradius>auto 0.025</foreradius>
@@ -358,8 +358,8 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="3064.208" maxvelocity="286.155" maxacceleration="87.005" maxmach="0.858" timetoapogee="24.431" flighttime="167.793" groundhitvelocity="8.879" launchrodvelocity="17.808" deploymentvelocity="22.838">
-        <warning>Recovery device deployment at high speed (32 m/s)</warning>
+      <flightdata maxaltitude="2930.136" maxvelocity="273.776" maxacceleration="82.617" maxmach="0.82" timetoapogee="24.175" flighttime="158.132" groundhitvelocity="9.183" launchrodvelocity="17.306" deploymentvelocity="23.629">
+        <warning>Recovery device deployment at high speed (37.2 m/s)</warning>
       </flightdata>
     </simulation>
 
