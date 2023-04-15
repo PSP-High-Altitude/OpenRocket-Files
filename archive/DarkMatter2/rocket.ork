@@ -358,29 +358,55 @@
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
-      <flightdata maxaltitude="2930.136" maxvelocity="273.776" maxacceleration="82.617" maxmach="0.82" timetoapogee="24.175" flighttime="158.132" groundhitvelocity="9.183" launchrodvelocity="17.306" deploymentvelocity="23.629">
-        <warning>Recovery device deployment at high speed (37.2 m/s)</warning>
+      <flightdata maxaltitude="2927.75" maxvelocity="273.656" maxacceleration="82.538" maxmach="0.819" timetoapogee="24.143" flighttime="157.827" groundhitvelocity="9.183" launchrodvelocity="17.306" deploymentvelocity="23.613">
+        <warning>Recovery device deployment at high speed (37.7 m/s)</warning>
       </flightdata>
     </simulation>
 
     <simulation status="notsimulated">
-      <name>Simulation 3</name>
+      <name>Indiana Rocketry, Weather Data</name>
       <simulator>RK4Simulator</simulator>
       <calculator>BarrowmanCalculator</calculator>
       <conditions>
         <configid>d63a5dc4-5001-4b3c-a9d3-b328c211cb25</configid>
-        <launchrodlength>1.0</launchrodlength>
+        <launchrodlength>2.4383999999999997</launchrodlength>
         <launchrodangle>0.0</launchrodangle>
         <launchroddirection>90.0</launchroddirection>
-        <windaverage>2.0</windaverage>
+        <windaverage>6.25856</windaverage>
         <windturbulence>0.1</windturbulence>
-        <launchaltitude>0.0</launchaltitude>
-        <launchlatitude>28.61</launchlatitude>
-        <launchlongitude>-80.6</launchlongitude>
+        <launchaltitude>216.10320000000002</launchaltitude>
+        <launchlatitude>40.23</launchlatitude>
+        <launchlongitude>87.29</launchlongitude>
         <geodeticmethod>spherical</geodeticmethod>
         <atmosphere model="isa"/>
         <timestep>0.05</timestep>
       </conditions>
+      <flightdata maxaltitude="3024.845" maxvelocity="274.329" maxacceleration="81.955" maxmach="0.819" timetoapogee="24.564" flighttime="161.383" groundhitvelocity="9.194" launchrodvelocity="17.305" deploymentvelocity="23.611">
+        <warning>Recovery device deployment at high speed (27.1 m/s)</warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Indiana Rocketry, 28 mph Limit</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>d63a5dc4-5001-4b3c-a9d3-b328c211cb25</configid>
+        <launchrodlength>2.4383999999999997</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>12.517120000000002</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>216.10320000000002</launchaltitude>
+        <launchlatitude>40.23</launchlatitude>
+        <launchlongitude>87.29</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+      <flightdata maxaltitude="2866.368" maxvelocity="272.84" maxacceleration="82.626" maxmach="0.826" timetoapogee="23.862" flighttime="154.899" groundhitvelocity="9.169" launchrodvelocity="17.307" deploymentvelocity="23.599">
+        <warning>Recovery device deployment at high speed (40.4 m/s)</warning>
+      </flightdata>
     </simulation>
   </simulations>
   <photostudio>
