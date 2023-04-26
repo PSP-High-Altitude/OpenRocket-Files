@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openrocket version="1.8" creator="OpenRocket 22.02">
+  <rocket>
+    <name>Rocket</name>
+    <axialoffset method="absolute">0.0</axialoffset>
+    <position type="absolute">0.0</position>
+    <motorconfiguration configid="d3c22c2e-1999-4f56-ab77-4ffd17db472b" default="true">
+      <stage number="0" active="true"/>
+    </motorconfiguration>
+    <referencetype>maximum</referencetype>
+
+    <subcomponents>
+      <stage>
+        <name>Sustainer</name>
+
+        <subcomponents>
+          <nosecone>
+            <name>Nose Cone</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0">Fiberglass</material>
+            <length>0.5</length>
+            <thickness>0.0015</thickness>
+            <shape>haack</shape>
+            <shapeclipped>false</shapeclipped>
+            <shapeparameter>0.0</shapeparameter>
+            <aftradius>0.0505</aftradius>
+            <aftshoulderradius>0.0</aftshoulderradius>
+            <aftshoulderlength>0.0</aftshoulderlength>
+            <aftshoulderthickness>0.0</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+            <isflipped>false</isflipped>
+
+            <subcomponents>
+              <shockcord>
+                <name>Shock Cord</name>
+                <axialoffset method="bottom">0.0</axialoffset>
+                <position type="bottom">0.0</position>
+                <packedlength>0.075</packedlength>
+                <packedradius>0.045</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cordlength>6.0</cordlength>
+                <material type="line" density="0.02976328">Kevlar 12-strand (6.4 mm, 1/4 in)</material>
+              </shockcord>
+
+              <parachute>
+                <name>Iris Ultra Compact Parachute [Cd 2.2 (13.4 oz) 74.1 in^3]</name>
+                <preset type="PARACHUTE" manufacturer="Fruity Chutes" partno="IFC-084-S" digest="615a10ea560740515db504dacd9386aa"/>
+                <axialoffset method="bottom">-0.08</axialoffset>
+                <position type="bottom">-0.08</position>
+                <overridemass>0.37988361</overridemass>
+                <overridesubcomponentsmass>false</overridesubcomponentsmass>
+                <packedlength>0.15</packedlength>
+                <packedradius>0.0375</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>2.2</cd>
+                <material type="surface" density="0.035653924">Ripstop nylon, lightweight, 3 mil</material>
+                <deployevent>apogee</deployevent>
+                <deployaltitude>200.0</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>2.1336</diameter>
+                <linecount>12</linecount>
+                <linelength>2.4536399999999996</linelength>
+                <linematerial type="line" density="0.001202975">Spectra #400 [Oval 2.55 mm, 3/32in]</linematerial>
+              </parachute>
+            </subcomponents>
+          </nosecone>
+
+          <bodytube>
+            <name>Body Tube</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0">Fiberglass</material>
+            <length>0.1</length>
+            <thickness>0.0015</thickness>
+            <radius>0.0505</radius>
+
+            <subcomponents>
+              <tubecoupler>
+                <name>Tube Coupler</name>
+                <axialoffset method="bottom">0.1</axialoffset>
+                <position type="bottom">0.1</position>
+                <material type="bulk" density="1850.0">Fiberglass</material>
+                <length>0.2</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <thickness>0.0015</thickness>
+              </tubecoupler>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Body Tube</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0">Fiberglass</material>
+            <length>0.8</length>
+            <thickness>0.0015</thickness>
+            <radius>0.0505</radius>
+
+            <subcomponents>
+              <masscomponent>
+                <name>Mass Component</name>
+                <axialoffset method="top">0.45</axialoffset>
+                <position type="top">0.45</position>
+                <packedlength>0.025</packedlength>
+                <packedradius>0.0125</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>2.0</mass>
+                <masscomponenttype>masscomponent</masscomponenttype>
+              </masscomponent>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Body Tube</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0">Fiberglass</material>
+            <length>1.607</length>
+            <thickness>0.0015</thickness>
+            <radius>auto 0.025</radius>
+            <motormount>
+              <ignitionevent>automatic</ignitionevent>
+              <ignitiondelay>0.0</ignitiondelay>
+              <overhang>0.0</overhang>
+              <motor configid="d3c22c2e-1999-4f56-ab77-4ffd17db472b">
+                <type>single</type>
+                <manufacturer>AeroTech</manufacturer>
+                <digest>fc6f6b87ee721839c3d03b75781cabe7</digest>
+                <designation>O5500X-PS</designation>
+                <diameter>0.098</diameter>
+                <length>1.507</length>
+                <delay>none</delay>
+              </motor>
+              <ignitionconfiguration configid="d3c22c2e-1999-4f56-ab77-4ffd17db472b">
+                <ignitionevent>automatic</ignitionevent>
+                <ignitiondelay>0.0</ignitiondelay>
+              </ignitionconfiguration>
+            </motormount>
+
+            <subcomponents>
+              <trapezoidfinset>
+                <name>Trapezoidal Fin Set</name>
+                <instancecount>4</instancecount>
+                <fincount>4</fincount>
+                <radiusoffset method="surface">0.0</radiusoffset>
+                <angleoffset method="relative">0.0</angleoffset>
+                <rotation>0.0</rotation>
+                <axialoffset method="bottom">0.0</axialoffset>
+                <position type="bottom">0.0</position>
+                <finish>normal</finish>
+                <material type="bulk" density="1850.0">Fiberglass</material>
+                <thickness>0.004</thickness>
+                <crosssection>airfoil</crosssection>
+                <cant>0.0</cant>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="680.0">Cardboard</filletmaterial>
+                <rootchord>0.3</rootchord>
+                <tipchord>0.075</tipchord>
+                <sweeplength>0.225</sweeplength>
+                <height>0.1</height>
+              </trapezoidfinset>
+
+              <tubecoupler>
+                <name>Tube Coupler</name>
+                <axialoffset method="top">-0.1</axialoffset>
+                <position type="top">-0.1</position>
+                <material type="bulk" density="1850.0">Fiberglass</material>
+                <length>0.2</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <thickness>0.0015</thickness>
+              </tubecoupler>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+
+  <simulations>
+    <simulation status="notsimulated">
+      <name>Simulation 1</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>d3c22c2e-1999-4f56-ab77-4ffd17db472b</configid>
+        <launchrodlength>1.0</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+      <flightdata maxaltitude="1.65e4" maxvelocity="1068.117" maxacceleration="338.444" maxmach="3.231" timetoapogee="49.517" flighttime="1200.17" launchrodvelocity="23.861" deploymentvelocity="4.307">
+        <warning>Body calculations may not be entirely accurate at supersonic speeds.</warning>
+      </flightdata>
+    </simulation>
+  </simulations>
+  <photostudio>
+  </photostudio>
+</openrocket>
