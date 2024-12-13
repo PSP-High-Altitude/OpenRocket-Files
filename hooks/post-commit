@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Check if NO_POST_COMMIT exists and exit if it does
+if [ -f "NO_POST_COMMIT" ]; then
+    exit 0
+fi
+
+# Clean .archive to ensure parity
+ARCHIVE_DIR=".archive"
+if [ -d "$ARCHIVE_DIR" ]; then
+    rm -rf "$ARCHIVE_DIR"
+fi
+mkdir "$ARCHIVE_DIR"
+
+# Find all .ork files in the current directory and its subdirectories
+ork_files=$(find . -type f -name "*.ork")
+
+for ork_file in $ork_files; do
+    # Determine the corresponding directory in .archive
+    archive_path="$ARCHIVE_DIR/${ork_file#./}"
+
+    # Create the destination directory
+    mkdir -p "$archive_path"
+
+    # Unzip the .ork file to the destination directory
+    unzip -q "$ork_file" -d "$archive_path"
+done
+
+# Call the external script to stage the changes in .archive and commit them
+./stage_and_commit_archive.sh
+
+exit 0

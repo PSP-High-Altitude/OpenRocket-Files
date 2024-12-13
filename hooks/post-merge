@@ -1,8 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 
-# for each subdir in "archive", zip it up and put it in
-# the working directory, overwriting as needed
-for subdir in "archive/*/"; do
-    dest="./$(basename ${subdir}).ork"
-    zip -r ${dest} "${subdir}*"
+ARCHIVE_DIR=".archive"
+
+# Find all subdirectories in .archive that end with .ork
+ork_dirs=$(find "$ARCHIVE_DIR" -type d -name "*.ork")
+
+# Process each .ork directory
+for ork_dir in $ork_dirs; do
+    # Determine the corresponding .ork file path outside of .archive
+    ork_file="${ork_dir#$ARCHIVE_DIR/}"
+
+    # Ensure the directory for the .ork file exists outside of .archive
+    mkdir -p "$(dirname "$ork_file")"
+
+    # Zip the contents of the .ork directory into the corresponding .ork file
+    zip -qr "$ork_file" "$ork_dir"/*
 done
