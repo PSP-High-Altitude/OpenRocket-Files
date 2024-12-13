@@ -15,7 +15,7 @@ mkdir "$ARCHIVE_DIR"
 # Find all .ork files in the current directory and its subdirectories
 ork_files=$(find . -type f -name "*.ork")
 
-for ork_file in $ork_files; do
+for ork_file in "$ork_files"; do
     # Determine the corresponding directory in .archive
     archive_path="$ARCHIVE_DIR/${ork_file#./}"
 

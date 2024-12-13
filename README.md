@@ -6,6 +6,7 @@ This repository is set up with hooks to allow git to work with .ork files proper
 * Setup
   * Run the setup script for your system: on Windows, double-click `setup.bat`; on MacOS and Linux, run `setup.sh`
 * Commiting changes
+  * This process might break if you have spaces in filenames or subdirectories, it hasn't been tested. So maybe just avoid spaces. Or fix my hooks, that'd be cool too.
   * `git add` and `git commit` as usual. The system will actually make two commits for you, but you don't need to worry about that.
 * Pulling from the remote
   * `git pull` as usual. Uncommitted changes in your local directory may be overwritten.

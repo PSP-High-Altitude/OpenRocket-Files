@@ -6,7 +6,7 @@ ARCHIVE_DIR=".archive"
 ork_dirs=$(find "$ARCHIVE_DIR" -type d -name "*.ork")
 
 # Process each .ork directory
-for ork_dir in $ork_dirs; do
+for ork_dir in "$ork_dirs"; do
     # Determine the corresponding .ork file path outside of .archive
     ork_file="${ork_dir#$ARCHIVE_DIR/}"
 
